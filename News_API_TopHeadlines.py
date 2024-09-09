@@ -1,6 +1,6 @@
 import requests
 
-def get_news(topic, from_date, to_date, language='en', api_key='3cdac0182a7f40afb1c4d10bfacf9230'):
+def get_news(topic, from_date, to_date, language='en', api_key='<api-key>'):
 #https://newsapi.org/v2/everything?q=Apple&from=2023-01-15&sortBy=popularity&apiKey=API_KE
   url = f'https://newsapi.org/v2/everything?q={topic}&from={from_date}&to={to_date}&sortBy=popularity&language={language}&apiKey={api_key}'
   r = requests.get(url)
